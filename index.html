@@ -2,20 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <title>Current Weather</title>
 </head>
 <body>
-<div id="weather">
+<div id="weather" class="card">
   <div id="description"></div>
   <h1 id="temp"></h1>
   <div id="location"></div>
 </div>
-<hr>
 <div>
   <form id="change-city">
-    <label for="city-name">City</label>
+    <label for="city-name" style="font-size: 15px">City</label>
     <input type="text" id="city-name">
-    <input type="submit" value="Save changes">
+    <input type="submit" class="btn" value="Save changes">
   </form>
   <br>
 </div>
@@ -23,5 +24,7 @@
 <script src="classes/Weather.js"></script>
 <script src="classes/UI.js"></script>
 <script src="app.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </body>
 </html>
