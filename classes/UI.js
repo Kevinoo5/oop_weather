@@ -8,8 +8,8 @@ class UI {
     drawWeather(data) {
         let celsius = Math.round(parseFloat(data.main.temp) - 273.15)
 
-        this.description.innerHTML = data.weather[0].description
-        this.temp.innerHTML = celsius + "&deg;"
-        this.city.innerHTML = data.name
+        this.description.innerHTML = "The weather outside is: " + data.weather[0].description
+        this.temp.innerHTML = "There are " + celsius + "&deg;" + " degrees outside"
+        this.city.innerHTML = "In " + data.name
     }
 }

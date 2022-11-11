@@ -4,16 +4,17 @@
   <meta charset="UTF-8">
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="style.css">
   <title>Current Weather</title>
 </head>
-<body>
-<div id="weather" class="card">
-  <div id="description"></div>
-  <h1 id="temp"></h1>
-  <div id="location"></div>
+<body class="row">
+<div id="weather" class="card col s12 m6 offset-m3" style="text-align: center">
+  <h3 id="description"></h3>
+  <h2 id="temp"></h2>
+  <h2 id="location"></h2>
 </div>
-<div>
-  <form id="change-city">
+<div id="change-city" class="card col s12 m6 offset-m3">
+  <form>
     <label for="city-name" style="font-size: 15px">City</label>
     <input type="text" id="city-name">
     <input type="submit" class="btn" value="Save changes">
